@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopX - Modern E-Commerce</title>
+
+    <link rel="stylesheet" href="newstyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+   <header class="header">
+    <div class="container nav">
+
+        <!-- Logo -->
+        <a href="#home" class="logo">
+            <span>Shop</span>X
+        </a>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#products" class="nav-link">Products</a>
+            <a href="#categories" class="nav-link">Categories</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+            <button id="searchBtn">🔍</button>
+        </div>
+
+        <!-- Actions -->
+        <div class="nav-actions">
+
+            <button class="icon-btn" id="themeBtn">
+                🌙
+            </button>
+
+            <button class="icon-btn wishlist-btn">
+                ❤️
+                <span id="wishlistCount">0</span>
+            </button>
+
+            <!-- Login -->
+            <a href="login.html" class="login-btn">
+                👤 
+            </a>
+
+            <!-- Cart -->
+            <button class="cart-btn" id="cartBtn">
+                🛒
+                <span>Cart</span>
+                <b id="cartCount">0</b>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <p class="hero-small">EXPLORE YOUR CHOICE</p>
+
+                <h1>
+                    Find Everything<br>
+                    You want to <span> Wear.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover amazing products at reasonable prices.
+                    Shop fashion, wears and more.
+                </p>
+
+                <a href="#products" class="shop-now">
+                    Shop Now →
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <div class="discount">
+                    <strong>50%</strong>
+                    <span>OFF</span>
+                </div>
+
+                <div class="product-circle">
+                   <a href="#products">🛍️</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories" id="categories">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <p>EXPLORE</p>
+                    <h2>Shop by Category</h2>
+                </div>
+            </div>
+
+            <div class="category-list">
+
+                <button class="category active" data-category="all">
+                    <span>✨</span>
+                    <b>All</b>
+                </button>
+
+                <button class="category" data-category="electronics">
+                    <span>💻</span>
+                    <b>Electronics</b>
+                </button>
+
+                <button class="category" data-category="fashion">
+                    <span>👕</span>
+                    <b>Fashion</b>
+                </button>
+
+                <button class="category" data-category="shoes">
+                    <span>👟</span>
+                    <b>Shoes</b>
+                </button>
+
+                <button class="category" data-category="accessories">
+                    <span>⌚</span>
+                    <b>Accessories</b>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <main id="products" class="products-section">
+
+        <div class="container">
+
+            <div class="products-header">
+
+                <div>
+                    <p>OUR PRODUCTS</p>
+                    <h2>Popular Products</h2>
+                </div>
+
+                <select id="sortSelect">
+                    <option value="default">Sort By</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                    <option value="rating">Highest Rated</option>
+                </select>
+
+            </div>
+
+            <div id="productGrid" class="product-grid">
+                <!-- Products generated by JavaScript -->
+            </div>
+
+            <div id="noProducts" class="no-products">
+                <span>😕</span>
+                <h3>No products found</h3>
+                <p>Try another search or category.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+<!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+
+    <div class="container about-content">
+
+        <div class="about-image">
+            🛍️
+        </div>
+
+        <div class="about-text">
+
+            <p>ABOUT SHOPX</p>
+
+            <h2>Shopping Made Simple & Better</h2>
+
+            <p>
+                ShopX is a modern online shopping platform where
+                you can discover quality products at affordable prices.
+                We make online shopping simple, fast and enjoyable.
+            </p>
+
+            <div class="about-features">
+                <div>
+                    🚚
+                    <strong>Fast Delivery</strong>
+                </div>
+
+                <div>
+                    🔒
+                    <strong>Secure Shopping</strong>
+                </div>
+
+                <div>
+                    ⭐
+                    <strong>Quality Products</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="contact-heading">
+            <p>GET IN TOUCH</p>
+            <h2>Contact Us</h2>
+            <span>
+                
+            </span>
+        </div>
+
+        <div class="contact-content">
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+                    <span>📍</span>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Attariya, Nepal</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>📧</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>support@shopx.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>📞</span>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+977 9765436573</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= CART SIDEBAR ================= -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+
+            <button id="closeCart">
+                ✕
+            </button>
+        </div>
+
+        <div id="cartItems" class="cart-items">
+            <!-- Cart items -->
+        </div>
+
+        <div class="empty-cart" id="emptyCart">
+            <span>🛒</span>
+            <h3>Your cart is empty</h3>
+            <p>Add some products to get started.</p>
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="subtotal">
+                <span>Subtotal</span>
+                <strong>$<span id="subtotal">0.00</span></strong>
+            </div>
+
+            <div class="shipping">
+                <span>Shipping</span>
+                <span>Free</span>
+            </div>
+
+            <div class="total">
+                <span>Total</span>
+                <strong>$<span id="total">0.00</span></strong>
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Proceed to Checkout →
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= CHECKOUT MODAL ================= -->
+
+    <div class="modal-container" id="checkoutModal">
+
+        <div class="modal">
+
+            <button class="modal-close" id="closeModal">
+                ✕
+            </button>
+
+            <div class="modal-icon">
+                🛍️
+            </div>
+
+            <h2>Checkout</h2>
+
+            <p class="modal-subtitle">
+                Enter your details to place the order.
+            </p>
+
+            <form id="checkoutForm">
+
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label>Address</label>
+                    <textarea
+                        placeholder="Your address"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="place-order">
+                    Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= TOAST ================= -->
+
+    <div id="toast" class="toast">
+        <span>✓</span>
+        <p>Product added to cart!</p>
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+                <a href="#home" class="logo">
+                    <span>Shop</span>X
+                </a>
+
+                <p>
+                    Your one-stop destination for<br>
+                    modern shopping.
+                </p>
+            </div>
+
+            <div>
+                <h3>Shop</h3>
+                <a href="#products">All Products</a>
+                <a href="#products">Electronics</a>
+                <a href="#products">Fashion</a>
+            <a href="#products">Modeling</a>
+            </div>
+
+            <div>
+                <h3>Help</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+
+                <div class="socials">
+                    <a href="https://www.facebook.com/dinesh.singh.mahara.2025" target="_blank">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">◎</a>
+                    <a href="#">▶</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 ShopX. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="newscript.js"></script>
+
+</body>
+</html>
